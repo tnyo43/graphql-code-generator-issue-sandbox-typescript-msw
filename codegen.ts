@@ -5,6 +5,13 @@ const config: CodegenConfig = {
   documents: "document.graphql",
   generates: {
     "types.ts": { plugins: ["typescript", "typescript-operations"] },
+    "mocks.ts": {
+      preset: "import-types",
+      plugins: ["typescript-operations", "typescript-msw"],
+      presetConfig: {
+        typesPath: "./types",
+      },
+    },
   },
 };
 
