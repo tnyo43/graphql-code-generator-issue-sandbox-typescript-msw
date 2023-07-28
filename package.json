@@ -9,11 +9,14 @@
   "dependencies": {
     "@graphql-codegen/add": "^5.0.0",
     "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/import-types-preset": "2.2.6",
     "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-msw": "1.1.6",
     "@graphql-codegen/typescript-operations": "^4.0.1",
     "graphql": "^16.2.0"
   },
   "devDependencies": {
+    "msw": "^1.2.3",
     "typescript": "^4.8.4"
   }
 }
